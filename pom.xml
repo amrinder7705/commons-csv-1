@@ -171,32 +171,7 @@ CSV files of various types.
           <tarLongFileMode>gnu</tarLongFileMode>
         </configuration>
       </plugin>
-      <plugin>
-      <groupId>org.apache.maven.plugins</groupId>
-      <artifactId>maven-surefire-plugin</artifactId>
-      <configuration>
-        <excludes>
-          <exclude>**/*IntegrationTest.java</exclude>
-        </excludes>
-      </configuration>
-      <executions>
-        <execution>
-          <id>integration-test</id>
-          <goals>
-            <goal>test</goal>
-          </goals>
-          <phase>integration-test</phase>
-          <configuration>
-            <excludes>
-              <exclude>none</exclude>
-            </excludes>
-            <includes>
-              <include>**/*IntegrationTest.java</include>
-            </includes>
-          </configuration>
-        </execution>
-      </executions>
-    </plugin>
+      
       <!-- Allow checkstyle to be run interactively; keep in sync with report config below -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
